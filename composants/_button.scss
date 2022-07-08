@@ -1,0 +1,22 @@
+.button{
+    border: none;
+    border-radius: 25px;
+    width: 250px;
+    height: 50px;
+    background: $color-secondary;
+    background: -moz-linear-gradient(-45deg, $color-secondary 0%, $color-primary 100%);
+    background: -webkit-linear-gradient(-45deg, $color-secondary 0%, $color-primary 100%);
+    background: linear-gradient(135deg, $color-secondary 0%, $color-primary 100%);
+    color: white;
+    font-weight: bold;
+    -webkit-box-shadow: 8px 7px 15px -6px rgba(0,0,0,0.94); 
+    box-shadow: 8px 7px 15px -6px rgba(0,0,0,0.94);
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &:hover{
+        filter: brightness(105%);
+    }
+}

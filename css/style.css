@@ -1,0 +1,73 @@
+.button, button {
+  border: none;
+  border-radius: 25px;
+  width: 250px;
+  height: 50px;
+  background: #FF79DA;
+  background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
+  color: white;
+  font-weight: bold;
+  box-shadow: 8px 7px 15px -6px rgba(0, 0, 0, 0.94);
+}
+.button a, button a {
+  text-decoration: none;
+  color: inherit;
+}
+.button:hover, button:hover {
+  filter: brightness(105%);
+}
+
+* {
+  /* Firefox */
+  /* Safari */
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: Roboto;
+}
+
+@media all and (min-width: 992px) {
+  body {
+    background-color: red;
+  }
+}
+@media all and (min-width: 1400px) {
+  body {
+    background-color: blue;
+  }
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+nav img {
+  width: 200px;
+  height: 50px;
+  padding-bottom: 10px;
+}
+
+.formulaire {
+  background-color: lightgray;
+  box-shadow: inset 0px 2px 5px 2px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form [type=search] {
+  background-color: lightgray;
+  border: none;
+}
+
+.introTexte {
+  background-color: rgb(243, 243, 243);
+  height: 250px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
