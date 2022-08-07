@@ -1,4 +1,4 @@
-.button {
+.button, .ensemble button {
   border: none;
   border-radius: 25px;
   width: 250px;
@@ -10,28 +10,28 @@
   box-shadow: 8px 7px 15px -6px rgba(0, 0, 0, 0.94);
   transition: 200ms;
 }
-.button a {
+.button a, .ensemble button a {
   text-decoration: none;
   color: inherit;
 }
-.button:hover {
+.button:hover, .ensemble button:hover {
   filter: brightness(105%);
   box-shadow: 8px 7px 15px 0px rgba(0, 0, 0, 0.94);
 }
 
-animacoeur, .menu .animacoeur {
+animacoeur, .carte .animacoeur {
   position: relative;
   font-size: 200%;
   display: flex;
   align-items: center;
   margin: 25px;
 }
-animacoeur .vide, .menu .animacoeur .vide {
+animacoeur .vide, .carte .animacoeur .vide {
   color: black;
   transform: scale(1);
   transition: 1s;
 }
-animacoeur .plein, .menu .animacoeur .plein {
+animacoeur .plein, .carte .animacoeur .plein {
   position: absolute;
   background: #FF79DA;
   background: linear-gradient(45deg, #FF79DA 0%, #9356DC 100%);
@@ -40,10 +40,10 @@ animacoeur .plein, .menu .animacoeur .plein {
   transition: 1s;
   transform: scale(0);
 }
-animacoeur:hover .plein, .menu .animacoeur:hover .plein {
+animacoeur:hover .plein, .carte .animacoeur:hover .plein {
   transform: scale(1);
 }
-animacoeur:hover .vide, .menu .animacoeur:hover .vide {
+animacoeur:hover .vide, .carte .animacoeur:hover .vide {
   transform: scale(0);
 }
 
@@ -109,7 +109,54 @@ footer a {
 .menu {
   border-radius: 50px 50px 0 0;
   background-color: rgb(243, 243, 243);
+  padding-top: 5%;
 }
+
+.carte {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.carte h1 {
+  font-family: Shrikhand;
+  font-size: 185%;
+  margin-left: 4.5%;
+}
+h2 {
+  font-weight: lighter;
+  margin-left: 5%;
+  padding-bottom: 2%;
+  border-bottom: solid #99E2D0 4px;
+  width: 45px;
+}
+
+.ensemble {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.ensemble button {
+  margin-top: 10%;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 8px 7px 15px -6px rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  width: 90%;
+  margin-bottom: 5%;
+}
+.card .texte h3, .card .texte p {
+  margin: 10px;
+}
+.card .prix {
+  margin-top: 7%;
+  margin-right: 6%;
+  font-weight: bold;
+}
+
 @media all and (min-width: 992px) {
   body {
     margin: auto;

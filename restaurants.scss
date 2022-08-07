@@ -27,13 +27,65 @@ header{
 .menu{
     border-radius: 50px 50px 0 0;
     background-color: $color-background;
+    padding-top: 5%;
+}
+
+.carte{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1{
+        font-family: Shrikhand;
+        font-size: 185%;
+        margin-left: 4.5%
+    }
 
     .animacoeur{
-        @extend animacoeur
+        @extend animacoeur;
     }
 }
 
+h2{
+    font-weight: lighter;
+    margin-left: 5%;
+    padding-bottom: 2%;
+    border-bottom: solid $color-tertiary 4px;
+    width: 45px;
+}
 
+.ensemble{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    button{
+        @extend .button;
+        margin-top: 10%;
+    }
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 8px 7px 15px -6px rgba(0,0,0,0.70);
+    border-radius: 15px;
+    width: 90%;
+    margin-bottom: 5%;
+
+    .texte{
+        h3, p{
+        margin: 10px;
+        }
+    }
+
+    .prix{
+        margin-top: 7%;
+        margin-right: 6%;
+        font-weight: bold;
+    }
+}
 
 @media all and (min-width: 992px){
     body{
