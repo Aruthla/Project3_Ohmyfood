@@ -11,6 +11,7 @@
     font-weight: bold;
     -webkit-box-shadow: 8px 7px 15px -6px rgba(0,0,0,0.94); 
     box-shadow: 8px 7px 15px -6px rgba(0,0,0,0.94);
+    transition: 200ms;
     a{
         text-decoration: none;
         color: inherit;
@@ -18,5 +19,7 @@
 
     &:hover{
         filter: brightness(105%);
+        -webkit-box-shadow: 8px 7px 15px 0px rgba(0,0,0,0.94); 
+        box-shadow: 8px 7px 15px 0px rgba(0,0,0,0.94);
     }
 }

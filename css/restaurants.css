@@ -1,0 +1,119 @@
+.button {
+  border: none;
+  border-radius: 25px;
+  width: 250px;
+  height: 50px;
+  background: #FF79DA;
+  background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
+  color: white;
+  font-weight: bold;
+  box-shadow: 8px 7px 15px -6px rgba(0, 0, 0, 0.94);
+  transition: 200ms;
+}
+.button a {
+  text-decoration: none;
+  color: inherit;
+}
+.button:hover {
+  filter: brightness(105%);
+  box-shadow: 8px 7px 15px 0px rgba(0, 0, 0, 0.94);
+}
+
+animacoeur, .menu .animacoeur {
+  position: relative;
+  font-size: 200%;
+  display: flex;
+  align-items: center;
+  margin: 25px;
+}
+animacoeur .vide, .menu .animacoeur .vide {
+  color: black;
+  transform: scale(1);
+  transition: 1s;
+}
+animacoeur .plein, .menu .animacoeur .plein {
+  position: absolute;
+  background: #FF79DA;
+  background: linear-gradient(45deg, #FF79DA 0%, #9356DC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 1s;
+  transform: scale(0);
+}
+animacoeur:hover .plein, .menu .animacoeur:hover .plein {
+  transform: scale(1);
+}
+animacoeur:hover .vide, .menu .animacoeur:hover .vide {
+  transform: scale(0);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-right: 15%;
+}
+header nav img {
+  width: 200px;
+  height: 50px;
+  padding-bottom: 10px;
+}
+header .arrow {
+  text-decoration: none;
+}
+
+footer {
+  background-color: rgb(50, 50, 50);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 8%;
+}
+footer h4 {
+  font-family: Shrikhand;
+  font-size: 20px;
+  font-weight: lighter;
+}
+footer .ftexte {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .ficon {
+  margin: 0 10px 10px 0;
+  width: 20px;
+}
+footer p {
+  margin: 0 0 15px 0;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+* { /* Firefox */ /* Safari */
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: Roboto, "'Times New Roman', Times, serif", Shrikhand;
+}
+
+.background img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+
+.menu {
+  border-radius: 50px 50px 0 0;
+  background-color: rgb(243, 243, 243);
+}
+@media all and (min-width: 992px) {
+  body {
+    margin: auto;
+    background: #9356DC;
+    background: linear-gradient(to bottom, #9356DC 0%, #99E2D0 50%, #FF79DA 100%);
+  }
+}/*# sourceMappingURL=restaurants.css.map */

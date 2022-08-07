@@ -1,0 +1,33 @@
+animacoeur{
+    position: relative;
+    font-size: 200%;
+    display: flex;
+    align-items: center;
+    margin: 25px;
+
+    .vide{
+        color: black;
+        transform: scale(1);
+        transition: 1s;
+    }
+
+    .plein{
+        position: absolute;
+        background: $color-secondary;
+        background: -moz-linear-gradient(45deg, $color-secondary 0%, $color-primary 100%);
+        background: -webkit-linear-gradient(45deg, $color-secondary 0%, $color-primary 100%);
+        background: linear-gradient(45deg, $color-secondary 0%, $color-primary 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: 1s;
+        transform: scale(0);
+    }
+
+    &:hover .plein{
+        transform: scale(1);
+    }
+
+    &:hover .vide{
+        transform: scale(0);
+    }
+}
