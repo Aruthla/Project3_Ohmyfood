@@ -188,6 +188,68 @@ h2 {
   width: 23%;
 }
 
+@-webkit-keyframes glissement {
+  from {
+    opacity: 0;
+    margin-top: 50px;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes glissement {
+  from {
+    opacity: 0;
+    margin-top: 50px;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.un {
+  -webkit-animation: glissement 1000ms 1000ms both;
+          animation: glissement 1000ms 1000ms both;
+}
+
+.one {
+  -webkit-animation: glissement 1000ms 1250ms both;
+          animation: glissement 1000ms 1250ms both;
+}
+
+.two {
+  -webkit-animation: glissement 1000ms 1500ms both;
+          animation: glissement 1000ms 1500ms both;
+}
+
+.three {
+  -webkit-animation: glissement 1000ms 1750ms both;
+          animation: glissement 1000ms 1750ms both;
+}
+
+.four {
+  -webkit-animation: glissement 1000ms 2000ms both;
+          animation: glissement 1000ms 2000ms both;
+}
+
 @media all and (min-width: 992px) {
   body {
     margin: auto;
@@ -218,5 +280,10 @@ h2 {
   }
   .card:hover .check {
     width: 15%;
+  }
+}
+@media all and (min-width: 1400px) {
+  .card .prix {
+    margin-top: 3%;
   }
 }/*# sourceMappingURL=restaurants.css.map */

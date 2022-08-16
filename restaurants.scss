@@ -121,6 +121,49 @@ h2{
     }
 }
 
+@keyframes glissement{
+    from {
+        opacity: 0;
+        margin-top: 50px;
+    }
+
+    25%{
+        opacity: 0.3;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    75%{
+        opacity: 0.7;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.un{
+    animation: glissement 1000ms 1000ms both;
+}
+
+.one{
+    animation: glissement 1000ms 1250ms both;
+}
+
+.two{
+    animation: glissement 1000ms 1500ms both;
+}
+
+.three{
+    animation: glissement 1000ms 1750ms both;
+}
+
+.four{
+    animation: glissement 1000ms 2000ms both;
+}
+
 footer{
     @extend footer
 }
@@ -171,4 +214,10 @@ footer{
     }
 }
 
-@media all and (min-width: 1400px){}
+@media all and (min-width: 1400px){
+    .card{
+        .prix{
+            margin-top: 3%;
+        }
+    }
+}
