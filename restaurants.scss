@@ -27,7 +27,9 @@ header{
 .menu{
     border-radius: 50px 50px 0 0;
     background-color: $color-background;
-    padding-top: 5%;
+    padding-top: 4%;
+    margin-top: -14%;
+    position: relative;
 }
 
 .carte{
@@ -37,7 +39,7 @@ header{
 
     h1{
         font-family: Shrikhand;
-        font-size: 185%;
+        font-size: 180%;
         margin-left: 4.5%
     }
 
@@ -62,29 +64,65 @@ h2{
     button{
         @extend .button;
         margin-top: 10%;
+        margin-bottom: 20%;
     }
 }
 
+
+
 .card{
     display: flex;
-    justify-content: space-between;
     background-color: white;
     box-shadow: 8px 7px 15px -6px rgba(0,0,0,0.70);
     border-radius: 15px;
     width: 90%;
     margin-bottom: 5%;
+    overflow: hidden;
 
     .texte{
+        flex-grow: 1;
+        width: 100px;
+
         h3, p{
-        margin: 10px;
+            margin: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
 
     .prix{
         margin-top: 7%;
-        margin-right: 6%;
+        padding-right: 6%;
         font-weight: bold;
     }
+
+    .check{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-tertiary;
+        width: 0px;
+        transition: .5s ease-in-out;
+    }
+    
+    .valide{
+        font-size: 150%;
+        color: white;
+        transition: .5s ease-in-out;
+    }
+
+    &:hover .valide{
+        transform: rotate(1turn);
+    }
+
+    &:hover .check{
+        width: 23%;
+    }
+}
+
+footer{
+    @extend footer
 }
 
 @media all and (min-width: 992px){
@@ -94,6 +132,42 @@ h2{
         background: -moz-linear-gradient(top, $color-primary 0%, $color-tertiary 50%, $color-secondary 100%);
         background: -webkit-linear-gradient(top, $color-primary 0%, $color-tertiary 50%, $color-secondary 100%);
         background: linear-gradient(to bottom, $color-primary 0%, $color-tertiary 50%, $color-secondary 100%);
+    }
+
+    .background{
+        display: flex;
+        justify-content: center;
+    
+        img{
+            width: 70%;
+            height: 550px;
+        }
+    }
+
+    .tout{
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu{
+        width: 70%;
+    }
+
+    .card{
+        width: 75%;
+    }
+
+    .ensemble{
+        button{
+            margin-top: 5%;
+            margin-bottom: 10%;
+        }    
+    }
+
+    .card{
+        &:hover .check{
+            width: 15%;
+        }
     }
 }
 
