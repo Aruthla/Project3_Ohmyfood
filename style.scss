@@ -11,6 +11,73 @@
     font-family: Roboto, "'Times New Roman', Times, serif",Shrikhand;
 }
 
+.loader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: $color-tertiary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    animation: chargement 4s forwards;
+
+    /*span{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border: 10px, solid transparent;
+        border-top-color: conic-gradient($color-primary, $color-secondary, $color-tertiary);
+        border-radius: 50%;
+        z-index: 2;
+        animation: spinner 1.2s linear infinite;
+    }
+
+    span:nth-child(2){
+        border: 10px solid transparent;
+        border-bottom-color: conic-gradient($color-primary, $color-secondary, $color-tertiary);
+     }*/
+}
+
+@keyframes spinner{
+    0%{
+        transform: rotate(0deg); 
+        border-width: 10px;
+    }
+
+    50%{
+        transform: rotate(180deg); 
+        border-width: 1px;
+    }
+
+    100%{
+        transform: rotate(360deg); 
+        border-width: 10px;
+    }
+}
+
+@keyframes chargement{
+    0%{
+        opacity: 1;
+    }
+
+    25%{
+        opacity: .75;
+    }
+
+    50%{
+        opacity: .5;
+    }
+
+    75%{
+        opacity: .25;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
 nav{
     display: flex;
     justify-content: center;
@@ -184,10 +251,6 @@ footer{
 @media all and (min-width: 992px){
     body{
         margin: auto;
-        background: $color-primary;
-        background: -moz-linear-gradient(top, $color-primary 0%, $color-tertiary 50%, $color-secondary 100%);
-        background: -webkit-linear-gradient(top, $color-primary 0%, $color-tertiary 50%, $color-secondary 100%);
-        background: linear-gradient(to bottom, $color-primary 0%, $color-tertiary 50%, $color-secondary 100%);
     }
 
     .formulaire{
