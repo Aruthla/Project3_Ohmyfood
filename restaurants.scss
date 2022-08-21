@@ -171,6 +171,7 @@ footer{
 @media all and (min-width: 992px){
     body{
         margin: auto;
+        background: linear-gradient($color-background, $color-tertiary);
     }
 
     .background{

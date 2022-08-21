@@ -171,6 +171,40 @@ footer a {
     opacity: 0;
   }
 }
+@-webkit-keyframes load {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 nav {
   display: flex;
   justify-content: center;
@@ -244,8 +278,7 @@ form [type=search] {
   width: 30px;
   background-color: #9356DC;
   color: white;
-  position: relative;
-  left: -12px;
+  margin-left: -12px;
 }
 .card .icon {
   color: #9356DC;
@@ -279,6 +312,8 @@ form [type=search] {
   width: 85%;
   margin-bottom: 5%;
   position: relative;
+  -webkit-animation: load 1s 5s backwards;
+          animation: load 1s 5s backwards;
 }
 .carte img {
   border-radius: 15px 15px 0px 0px;
@@ -319,6 +354,7 @@ form [type=search] {
 @media all and (min-width: 992px) {
   body {
     margin: auto;
+    background: linear-gradient(rgb(243, 243, 243), #99E2D0);
   }
   .formulaire {
     width: 70%;

@@ -253,6 +253,7 @@ h2 {
 @media all and (min-width: 992px) {
   body {
     margin: auto;
+    background: linear-gradient(rgb(243, 243, 243), #99E2D0);
   }
   .background {
     display: flex;

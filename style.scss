@@ -76,6 +76,28 @@
     }
 }
 
+@keyframes load{
+    0%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: .25;
+    }
+
+    50%{
+        opacity: .5;
+    }
+
+    75%{
+        opacity: .75;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
 nav{
     display: flex;
     justify-content: center;
@@ -146,6 +168,7 @@ button{
     margin-bottom: 8%;
     box-shadow: 8px 7px 15px -6px rgba(0,0,0,0.70);
     
+    
     .number{
         display: flex;
         justify-content: center;
@@ -155,8 +178,7 @@ button{
         width: 30px;
         background-color: $color-primary;
         color: white;
-        position: relative;
-        left: -12px;
+        margin-left: -12px;
     }
 
     .icon{
@@ -195,6 +217,7 @@ button{
     width: 85%;
     margin-bottom: 5%;
     position: relative;
+    animation: load 1s 5s backwards;
 
     img{
        border-radius: 15px 15px 0px 0px;
@@ -249,6 +272,7 @@ footer{
 @media all and (min-width: 992px){
     body{
         margin: auto;
+        background: linear-gradient($color-background, $color-tertiary);
     }
 
     .formulaire{
