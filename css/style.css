@@ -1,4 +1,4 @@
-.button, button {
+.button {
   border: none;
   border-radius: 25px;
   width: 250px;
@@ -10,11 +10,11 @@
   box-shadow: 8px 7px 15px -6px rgba(0, 0, 0, 0.94);
   transition: 200ms;
 }
-.button a, button a {
+.button a {
   text-decoration: none;
   color: inherit;
 }
-.button:hover, button:hover {
+.button:hover {
   filter: brightness(105%);
   box-shadow: 8px 7px 15px 0px rgba(0, 0, 0, 0.94);
 }
@@ -76,7 +76,9 @@ footer a {
   color: white;
 }
 
-* { /* Firefox */ /* Safari */
+* {
+  /* Firefox */
+  /* Safari */
   box-sizing: border-box;
   list-style-type: none;
   font-family: Roboto, "'Times New Roman', Times, serif", Shrikhand;
@@ -90,8 +92,9 @@ footer a {
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-animation: chargement 1s 5s forwards;
-          animation: chargement 1s 5s forwards;
+  z-index: -3;
+  -webkit-animation: chargement 1s 2s forwards;
+          animation: chargement 1s 2s forwards;
 }
 .loader span {
   position: absolute;
@@ -137,6 +140,11 @@ footer a {
     border-width: 10px;
   }
 }
+.load {
+  -webkit-animation: load 1s 2s backwards;
+          animation: load 1s 2s backwards;
+}
+
 @-webkit-keyframes chargement {
   0% {
     opacity: 1;
@@ -154,6 +162,7 @@ footer a {
     opacity: 0;
   }
 }
+
 @keyframes chargement {
   0% {
     opacity: 1;
@@ -231,6 +240,12 @@ nav img {
 form [type=search] {
   background-color: lightgray;
   border: none;
+}
+
+.button p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .introTexte {
@@ -312,8 +327,6 @@ form [type=search] {
   width: 85%;
   margin-bottom: 5%;
   position: relative;
-  -webkit-animation: load 1s 5s backwards;
-          animation: load 1s 5s backwards;
 }
 .carte img {
   border-radius: 15px 15px 0px 0px;
@@ -339,8 +352,8 @@ form [type=search] {
 }
 .carte .new {
   margin: 10px;
-  color: green;
-  background-color: lightgreen;
+  color: #217460;
+  background-color: #99E2D0;
   border-radius: 5px;
   height: 30px;
   width: 90px;

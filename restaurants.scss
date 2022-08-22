@@ -61,14 +61,18 @@ h2{
     align-items: center;
     flex-direction: column;
 
-    button{
+    .button{
         @extend .button;
         margin-top: 10%;
         margin-bottom: 20%;
     }
 }
 
-
+.button p{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .card{
     display: flex;

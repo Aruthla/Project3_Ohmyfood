@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d160360027.js" crossorigin="anonymous"></script>
     <title>Ohmyfood</title>
@@ -17,19 +19,22 @@
         <span></span>
     </div>
     
+    <div class="load">
     <header>
         <nav>
             <img src="./assets/logo/ohmyfood.png" alt="logo Ohmyfood">
                 <div class="formulaire">
                     <form>
                         <i class="fa-solid fa-location-dot location"></i>
-                        <input type="search" name="search" id="search" value="Paris, Bellville"/>
+                        <input type="search" name="search" id="search" value="Paris, Belleville"/>
                     </form>
                 </div>
                 <div class="introTexte">
                     <h1>Réservez le menu qui vous convient</h1>
                     <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                    <button><a href="#.restaurants">Explorez nos restaurants</a></button>
+                    <div class="button">
+                        <a href="#restaurants"><p>Explorez nos restaurants</p></a>
+                    </div>
                 </div>
             </nav>
     </header>
@@ -39,7 +44,7 @@
             <div class="card">
                 <p class="number">1</p>
                 <i class="fa-solid fa-mobile-screen-button icon"></i>
-                <p>Choissiez un restaurant</p>
+                <p>Choissez un restaurant</p>
             </div>
             <div class="card">
                 <p class="number">2</p>
@@ -54,7 +59,7 @@
         </div>
     </div>
 
-    <div class="restaurants"><h2>Restaurants</h2>
+    <div id="restaurants" class="restaurants"><h2>Restaurants</h2>
         <div class="menus">
             <div class="carte">
                 <a href="palette.html">
@@ -133,8 +138,9 @@
                 <p>Devenir partenaire</p>
             </div>
             <p>Mentions légales</p>
-            <a href="mailto: laetitia.cli@live.fr"  target="_blank"><p>Contact</p></a>
+            <a href="mailto:laetitia.cli@live.fr"  target="_blank"><p>Contact</p></a>
         </div>
     </footer>
+    </div>
 </body>
 </html>

@@ -1,4 +1,4 @@
-.button, .ensemble button {
+.button, .ensemble .button {
   border: none;
   border-radius: 25px;
   width: 250px;
@@ -10,11 +10,11 @@
   box-shadow: 8px 7px 15px -6px rgba(0, 0, 0, 0.94);
   transition: 200ms;
 }
-.button a, .ensemble button a {
+.button a, .ensemble .button a {
   text-decoration: none;
   color: inherit;
 }
-.button:hover, .ensemble button:hover {
+.button:hover {
   filter: brightness(105%);
   box-shadow: 8px 7px 15px 0px rgba(0, 0, 0, 0.94);
 }
@@ -139,9 +139,15 @@ h2 {
   align-items: center;
   flex-direction: column;
 }
-.ensemble button {
+.ensemble .button {
   margin-top: 10%;
   margin-bottom: 20%;
+}
+
+.button p, .ensemble .button p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
