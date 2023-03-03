@@ -1,5 +1,5 @@
 # Project3_Ohmyfood
-# Formation Développeur Front-End - Projet 3 - Ohmyfood!
+# Formation Développeur Web - Projet 3 - Ohmyfood!
 ------------
 ### Description du projet
 Ce projet est le n°3 du parcours [**Développeur Web**](https://openclassrooms.com/fr/paths/185-developpeur-web) qui consiste à dynamiser une page web avec des animations CSS.
